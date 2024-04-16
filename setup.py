@@ -11,7 +11,7 @@ package_name = package["name"].replace(" ", "_").replace("-", "_")
 
 setup(
     name=package_name,
-    version=package["version"],
+    version=package["version"] + '.post1+scalar-bar',
     author=package['author'],
     packages=find_packages(include=[package_name, package_name + ".*"]),
     include_package_data=True,
